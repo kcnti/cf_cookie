@@ -18,7 +18,6 @@ chromeOptions.add_argument("--disable-gpu")
 driver = webdriver.Chrome(options=chromeOptions)
 driver.get(url)
 time.sleep(10)
-
 for req in driver.requests:
     try:
         print("#########################")
